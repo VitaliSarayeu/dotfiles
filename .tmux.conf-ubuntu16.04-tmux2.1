@@ -1,0 +1,24 @@
+# vi
+====
+setw -g mode-keys vi
+set -g status-keys vi
+
+# setup 'v' to begin selection as in vim
+bind-key -t vi-copy v begin-selection
+bind-key -t vi-copy y copy-pipe "xclip -in -selection clipboard"
+
+# map vi movement keys as pane movement keys
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+# use vi left and right to cycle thru panes
+bind -r C-h select-window -t :-
+bind -r C-l select-window -t :+
+
+# resize panes using vi keys
+bind -r H resize-pane -L 5
+bind -r J resize-pane -D 5
+bind -r K resize-pane -U 5
+bind -r L resize-pane -R 5
