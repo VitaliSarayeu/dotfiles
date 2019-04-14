@@ -11,7 +11,8 @@ URxvt*font: xft:Monoid:size=12:antialias=true:hinting=true
 ! URxvt*font: 9x15bold,xft:scientifica
 
 ! DroidSansMono Nerd Font
-! URxvt.letterSpace: -1
+URxvt.letterSpace: -1
+URxvt.lineSpace: 1
 
 ! terminal padding
 URxvt.internalBorder: 15 
