@@ -57,7 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\n\[\033[01;34m\]>\[\033[00m\] '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -115,9 +115,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-[ -r /home/vagrant/.byobu/prompt ] && . /home/vagrant/.byobu/prompt   #byobu-prompt#
-byobu
-. venv/bin/activate
-complete -C '/home/vagrant/venv/bin/aws_completer' aws
 
-export PATH="${PATH}:${HOME}/.local/bin/" # for pywal
+export PATH="${PATH}:${HOME}/.local/bin/"
