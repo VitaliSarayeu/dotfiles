@@ -10,8 +10,10 @@ super + Return
 
 # program launcher
 #super + @space
+#super + d
+#	dmenu_run
 super + d
-	dmenu_run
+	rofi -show run
 
 # super + l
 # 	i3lock -i /home/dramalama/Pictures/earthwallpaper.png
