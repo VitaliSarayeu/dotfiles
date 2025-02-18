@@ -11,6 +11,7 @@ vim.cmd("set smartindent")
 
 vim.cmd("syntax enable")
 vim.cmd("syntax on")
+vim.cmd("set notermguicolors")
 
 -- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1
