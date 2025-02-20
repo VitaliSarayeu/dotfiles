@@ -6,7 +6,13 @@
 brew install nvim bat ripgrep lazygit
 ```
 
+### Setup fonts
 
+```
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Terminus.zip
+```
+
+Blocky and most importantly supports Russian symbols
 
 ### setup zettel repo
 

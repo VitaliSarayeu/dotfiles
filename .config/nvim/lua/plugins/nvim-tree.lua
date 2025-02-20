@@ -7,4 +7,8 @@ return {
   config = function()
     require("nvim-tree").setup {}
   end,
+  keys = {
+      { "<leader>t", "<cmd>NvimTreeOpen<cr>", desc = "Nvim Tree" }
+  }
+
 }
