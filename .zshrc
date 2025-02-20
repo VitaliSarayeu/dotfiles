@@ -3,9 +3,9 @@ export PATH="/usr/local/bin:/opt/homebrew/opt/mysql-client@8.4/bin:$PATH"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export CLICOLOR=1
 export AWS_REGION=us-east-1
-export PROMPT="%F{green}%n%f%F{red}@%f%B%F{cyan}%~%f%b%B%F{red}${NEWLINE}>%f%b "
+export PROMPT="%F{green}%F{red}@%f%B%F{cyan}%~%f%b%B%F{red}${NEWLINE}>%f%b "
 
-alias terraform="podman run --rm -it -v $HOME:$HOME -v /Volumes:/Volumes -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY -e AWS_REGION=$AWS_REGION  --workdir $PWD  hashicorp/terraform:1.8.2 "
+# alias terraform="podman run --rm -it -v $HOME:$HOME -v /Volumes:/Volumes -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY -e AWS_REGION=$AWS_REGION  --workdir $PWD  hashicorp/terraform:1.8.2 "
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
