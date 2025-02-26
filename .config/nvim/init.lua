@@ -87,3 +87,5 @@ require("ibl").setup { indent = { highlight = highlight, char = "┊" } }
 
 -- yaml
 require("yaml_nvim").setup({ ft = { "yaml",  "yml" } })
+
+

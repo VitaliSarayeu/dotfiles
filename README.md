@@ -3,7 +3,7 @@
 ## Macos
 
 ```
-brew install nvim bat ripgrep lazygit
+brew install nvim bat ripgrep lazygit pandoc
 ```
 
 ### Setup fonts
@@ -27,3 +27,7 @@ git clone git@github.com:VitaliSarayeu/zettel.git
 mv $HOME/.config/nvim $HOME/.config/nvim-bak
 ln -s $HOME/dotfiles/.config/nvim $HOME/.config/nvim
 ```
+
+### neovim tips
+
+Run fzf with `<leader>ff`, then pressing Enter will open in current buffer, `ctrl-v` will open in vert split, `ctrl-s` in horizontal split `ctrl-t` in a new tab
