@@ -8,7 +8,10 @@ return {
     require("nvim-tree").setup {}
   end,
   keys = {
-      { "<leader>t", "<cmd>NvimTreeOpen<cr>", desc = "Nvim Tree" }
+      { "<leader>Tt", "<cmd>NvimTreeOpen<cr>", desc = "Nvim Tree" },
+
+      { "<leader>Tb", "<cmd>Telescope buffers<cr>", desc = "Telescope buffers" }
+
   }
 
 }
