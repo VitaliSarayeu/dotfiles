@@ -1,4 +1,5 @@
 # export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+NEWLINE=$'\n'
 export PATH="/usr/local/bin:/opt/homebrew/opt/mysql-client@8.4/bin:$PATH"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export CLICOLOR=1
