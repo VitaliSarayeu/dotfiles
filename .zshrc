@@ -13,3 +13,5 @@ export PROMPT="%F{green}%F{red}@%f%B%F{cyan}%~%f%b%B%F{red}${NEWLINE}>%f%b "
 export FZF_DEFAULT_OPTS=' --height=40% --preview="bat --color=always --style=numbers --line-range=:500 {}" --preview-window=right:60%:wrap'
 
 export FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git -o -name .terraform \) -prune -o -print'
+
+export EDITOR="nvim"
