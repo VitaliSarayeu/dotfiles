@@ -1,10 +1,10 @@
 {
-  "fzf-lua": { "branch": "main", "commit": "23dce7340eecc74cfd933401e1690b8416d7ff86" },
+  "fzf-lua": { "branch": "main", "commit": "b11467c3fbfe48e4a815e4909f5c4e5b413ce6d0" },
   "indent-blankline.nvim": { "branch": "master", "commit": "005b56001b2cb30bfa61b7986bc50657816ba4ba" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
   "lazygit.nvim": { "branch": "main", "commit": "b9eae3badab982e71abab96d3ee1d258f0c07961" },
   "nvim-tree.lua": { "branch": "master", "commit": "be5b788f2dc1522c73fb7afad9092331c8aebe80" },
-  "nvim-treesitter": { "branch": "master", "commit": "684eeac91ed8e297685a97ef70031d19ac1de25a" },
+  "nvim-treesitter": { "branch": "master", "commit": "94ea4f436d2b59c80f02e293466c374584f03b8c" },
   "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
   "telekasten.nvim": { "branch": "main", "commit": "6a10a7929421d6e696e46bbc5aa5627a8cbcf61d" },
   "telescope.nvim": { "branch": "master", "commit": "a4ed82509cecc56df1c7138920a1aeaf246c0ac5" },
