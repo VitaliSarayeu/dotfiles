@@ -1,4 +1,11 @@
 require("config.lazy")
+-- require("config.lazy").setup({
+-- --towolf/vim-helm provides basic syntax highlighting and filetype detection
+-- -- ft = 'helm' is important to not start yamlls
+--   { 'towolf/vim-helm',       ft = 'helm' },
+--   { "neovim/nvim-lspconfig", event = { "BufReadPre", "BufNewFile", "BufEnter" } }
+-- })
+
 
 vim.cmd("set number")
 
@@ -88,6 +95,7 @@ require("ibl").setup { indent = { highlight = highlight, char = "┊" } }
 -- yaml
 require("yaml_nvim").setup({ ft = { "yaml",  "yml" } })
 
+
 -- treesitter for syntax highliting on errything
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "all",     
@@ -95,3 +103,19 @@ require'nvim-treesitter.configs'.setup {
     enable = true              
   },
 }
+
+local lspconfig = require('lspconfig')
+
+
+-- https://github.com/mrjosh/helm-ls/blob/master/examples/nvim/init.lua
+lspconfig.helm_ls.setup {
+	settings = {
+	    ['helm-ls'] = {
+	        yamlls = {
+		        path = "yaml-language-server",
+		    }
+		}
+	}
+}
+
+lspconfig.yamlls.setup {}

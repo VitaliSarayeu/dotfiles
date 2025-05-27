@@ -31,4 +31,8 @@ require("lazy").setup({
   install = { colorscheme = {"catppuccin", "habamax", } },
   -- automatically check for plugin updates
   checker = { enabled = true },
+--towolf/vim-helm provides basic syntax highlighting and filetype detection
+-- ft = 'helm' is important to not start yamlls
+  { 'towolf/vim-helm',       ft = 'helm' },
+  { "lspconfig", event = { "BufReadPre", "BufNewFile", "BufEnter" } }
 })

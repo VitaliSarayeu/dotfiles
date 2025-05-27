@@ -3,7 +3,7 @@
 ## Macos
 
 ```
-brew install nvim bat ripgrep lazygit pandoc
+brew install nvim bat ripgrep lazygit pandoc yaml-language-server helm-ls
 ```
 
 ### Setup fonts
