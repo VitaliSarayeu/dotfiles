@@ -17,8 +17,13 @@ vim.cmd("set autochdir")
 -- vim.cmd("set expandtab")
 -- vim.cmd("set smartindent")
 
-vim.opt["tabstop"] = 4
-vim.opt["shiftwidth"] = 4
+vim.o.tabstop = 2 -- A TAB character looks like 4 spaces
+vim.o.expandtab = true -- Pressing the TAB key will insert spaces instead of a TAB character
+vim.o.softtabstop = 2 -- Number of spaces inserted instead of a TAB character
+vim.o.shiftwidth = 2 -- Number of spaces inserted when indenting
+
+-- vim.opt["tabstop"] = 4
+-- vim.opt["shiftwidth"] = 4
 
 vim.cmd("syntax enable")
 vim.cmd("syntax on")
