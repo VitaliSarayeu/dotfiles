@@ -109,18 +109,6 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
-local lspconfig = require('lspconfig')
-
-
--- https://github.com/mrjosh/helm-ls/blob/master/examples/nvim/init.lua
-lspconfig.helm_ls.setup {
-	settings = {
-	    ['helm-ls'] = {
-	        yamlls = {
-		        path = "yaml-language-server",
-		    }
-		}
-	}
-}
-
-lspconfig.yamlls.setup {}
+-- local lspconfig = require('lspconfig')
+vim.lsp.enable('helm_ls')
+vim.lsp.enable('yamlls')
