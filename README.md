@@ -40,3 +40,6 @@ ln -s $HOME/dotfiles/.config/nvim $HOME/.config/nvim
 
 Run fzf with `<leader>ff`, then pressing Enter will open in current buffer, `ctrl-v` will open in vert split, `ctrl-s` in horizontal split `ctrl-t` in a new tab
 
+Use `K` for lsp floats
+
+use `:lua vim.lsp.diagnostic.show_line_diagnostics()` to display error messages for lsp linters
