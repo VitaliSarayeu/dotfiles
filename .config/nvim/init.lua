@@ -100,10 +100,10 @@ require("ibl").setup { indent = { highlight = highlight, char = "┊" } }
 -- yaml
 require("yaml_nvim").setup({ ft = { "yaml",  "yml" } })
 
-
 -- treesitter for syntax highliting on errything
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "all",     
+  ignore_install = { "ipkg"}, -- List of parsers to ignore installing
   highlight = {
     enable = true              
   },
