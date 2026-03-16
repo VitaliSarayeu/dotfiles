@@ -30,6 +30,12 @@ RUN wget https://releases.hashicorp.com/terraform/1.14.3/terraform_1.14.3_linux_
 RUN git clone https://github.com/derailed/k9s.git; \
     cd k9s && make build && mv ./execs/k9s /usr/bin
 
+RUN curl -fsSL https://claude.ai/install.sh | bash
+
+RUN dnf install -y https://s3.amazonaws.com/session-manager-downloads/plugin/latest/linux_arm64/session-manager-plugin.rpm
+
+ENV ANTHROPIC_BASE_URL="http://host.docker.internal:8000"
+ENV ANTHROPIC_AUTH_TOKEN="claude"
 
 # docker run --rm -it -v ~/dotfiles/.config:/root/.config -v ~/.ssh:/root/.ssh:ro -v ~/.aws:/root/.aws:ro -v ~/Documents/Sentry/:/root/Sentry -w /root workstation bash
 # need volume for /root/.cache and /root/.local
