@@ -34,6 +34,27 @@ RUN curl -fsSL https://claude.ai/install.sh | bash
 
 RUN dnf install -y https://s3.amazonaws.com/session-manager-downloads/plugin/latest/linux_arm64/session-manager-plugin.rpm
 
+RUN curl -fsSL https://opencode.ai/install | bash
+
+ENV OPENCODE_CONFIG=~/opencode.json
+# {
+#   "$schema": "https://opencode.ai/config.json",
+#   "provider": {
+#     "llama-local": {
+#       "name": "Llama.cpp (RTX4090)",
+#       "npm": "@ai-sdk/openai-compatible",
+#       "options": {
+#         "baseURL": "http://host.docker.internal:8000/v1"
+#       },
+#       "models": {
+#         "unsloth/Qwen3.5-27B-GGUF": {
+#           "name": "Qwen3.5-27B Q4_K_XL"
+#         }
+#       }
+#     }
+#   }
+# }
+
 ENV ANTHROPIC_BASE_URL="http://host.docker.internal:8000"
 ENV ANTHROPIC_AUTH_TOKEN="claude"
 
